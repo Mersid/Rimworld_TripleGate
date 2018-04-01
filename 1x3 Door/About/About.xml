@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<ModMetaData>
+  
+		<name>1x3 Gate</name>
+  
+		<author>Mersid</author>
+  
+                <targetVersion>0.18.0</targetVersion>
+
+		<description>Adds a 1x3 gate to Rimworld. REQUIRES DOORS EXPANDED!</description>
+	
+</ModMetaData>

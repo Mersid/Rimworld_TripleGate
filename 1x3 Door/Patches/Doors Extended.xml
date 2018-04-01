@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<!-- 1x3 Door -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs</xpath>
+		<value>
+			<DoorsExpanded.DoorExpandedDef ParentName="HeronDoor">
+				<defName>PH_GateTripleThick</defName>
+				<label>gate (1x3)</label>
+				<size>(3,1)</size>
+				<placeWorkers>
+					<li>JecsTools.PlaceWorker_Outline</li>
+				</placeWorkers>
+				<blueprintGraphicData>
+					<texPath>Things/Building/Door/DoorDoubleThick_Blueprint</texPath>
+				</blueprintGraphicData>
+				<statBases>
+					<MaxHitPoints>1100</MaxHitPoints>
+					<WorkToBuild>3200</WorkToBuild>
+					<Flammability>2.0</Flammability>
+				</statBases>
+				<uiIconPath>Things/Building/Door/Gate_MenuUI</uiIconPath>
+				<graphicData>
+					<texPath>Things/Building/Door/GateDoubleThick_Mover</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,2)</drawSize>
+					<damageData>
+						<!--  no damage marks because they don't move with the door
+						<rect>(0,0.12,1,0.76)</rect>-->
+						<enabled>false</enabled>
+					</damageData>
+				</graphicData>
+				<doorType>Standard</doorType>
+				<fixedPerspective>true</fixedPerspective>
+				<costStuffCount>270</costStuffCount>
+			</DoorsExpanded.DoorExpandedDef>
+		</value>
+	</Operation>
+</Patch>
